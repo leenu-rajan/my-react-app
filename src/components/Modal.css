@@ -44,7 +44,7 @@
     /* adjust for spacing from top */
     right: 8px;
     /* adjust for spacing from right */
-    /* background: transparent; */
+    background: transparent;
     border: none;
     font-size: 1.5rem;
     cursor: pointer;
