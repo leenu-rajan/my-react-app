@@ -54,7 +54,7 @@ describe('Tests for Modal component', () => {
             size="small"
         />)
 
-        const closeButton = screen.getByRole('button', { name: /close/i })
+        const closeButton = screen.getByRole('button', { name: 'Close' })
         fireEvent.click(closeButton);
         expect(onClose).toHaveBeenCalledTimes(1)
 
