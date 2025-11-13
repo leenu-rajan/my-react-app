@@ -1,0 +1,60 @@
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+
+}
+
+.modal-content {
+    position: relative;
+    /* *** important *** */
+    /* your other styles e.g. background, padding */
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    max-width: 50%;
+
+}
+
+
+/* size variants */
+.modal-content-small {
+    width: 300px;
+}
+
+.modal-content-medium {
+    width: 500px;
+}
+
+.modal-content-large {
+    width: 800px;
+}
+
+.modal-close-button {
+    position: absolute;
+    top: 8px;
+    /* adjust for spacing from top */
+    right: 8px;
+    /* adjust for spacing from right */
+    /* background: transparent; */
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    /* optional: width, height, padding, color etc */
+}
+
+/* The .modal-content { position: relative; } creates a positioning context for absolutely positioned children.
+
+The .modal-close-button { position: absolute; top: …; right: …; } then positions the button relative to that parent, i.e., in the top-right corner of the modal.
+
+Using a fixed parent (.modal-overlay) ensures the modal sits above other content.
+
+Putting the close button inside the component keeps the markup self-contained and reusable. */
